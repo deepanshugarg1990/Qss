@@ -12,7 +12,9 @@ class Home extends Component {
     render() {
         return (
             <SafeAreaView style={{flexDirection: 'column', backgroundColor: 'white', flex: 1}}>
-                <ToolBarScreen/>
+                <ToolBarScreen
+                    click={this.onclick}
+                />
                 <ScrollView style={{flex: 1}}>
                     <DressScreen/>
                     <SectionScreen/>
@@ -20,6 +22,11 @@ class Home extends Component {
                 </ScrollView>
             </SafeAreaView>
         );
+    }
+
+
+    onclick = () => {
+        this.props.navigation.navigate('NextScreen')
     }
 
 }

@@ -18,7 +18,7 @@ class ToolBarScreen extends Component {
                 <TouchableOpacity
                     style={{flex: .2}}
                     onPress={() => {
-                        console.log("Dipanshu Garg")
+                       this.props.click();
                     }}>
                     <Image style={styles.drawerStyle}
                            source={ImageAssets.icon_drawer}
@@ -41,7 +41,7 @@ class ToolBarScreen extends Component {
                 <TouchableOpacity
                     style={{flex: .1, marginTop: 17, marginLeft: 15}}
                     onPress={() => {
-                        console.log("Dipanshu Garg")
+                        this.props.click();
                     }}>
                     <Image
                         source={ImageAssets.icon_shorting}
@@ -51,7 +51,7 @@ class ToolBarScreen extends Component {
                 <TouchableOpacity
                     style={{flex: .2, marginTop: 5}}
                     onPress={() => {
-                        console.log("Dipanshu Garg")
+                        this.props.click();
                     }}>
                     <Image style={styles.bellStyle}
                            source={ImageAssets.icon_bell}
